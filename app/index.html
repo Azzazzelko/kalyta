@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
-
-  <!-- Bootstrap -->
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,11 +20,11 @@
         <div class="container-fluid">
           <div class="container">
             <div class="row header__top">
-              <div class="col-lg-3">
+              <div class="col-lg-3 pull-left">
                 <a href="mailto:info@kalitahouse.ru" class="header__info">info@kalitahouse.ru</a>
               </div>
               <div class="col-lg-4 pull-right text-right">
-                <a href="#" class="header__call">Заказать звонок</a>
+                <a href=".call-pop-up" class="header__call" data-toggle="modal">Заказать звонок</a>
                 <div class="header__tel">+7(495)729-18-86</div>
               </div>
             </div>
@@ -697,6 +696,22 @@
                   </div>
                 </form>
               </div> 
+            </div>
+          </div>
+        </div>
+        
+        <!-- Call Pop-Up -->
+        <div class="modal fade call-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="call-pop-up__dialog">
+            <div class="call-pop__container">
+              <a href="#" class="call-pop__close-button" data-dismiss="modal"></a>
+              <div class="call-pop__title">Заказать звонок</div>
+              <div class="call-pop__description">Обратите внимание, все поля обязательны для заполнения</div>
+              <form action="#" class="call-pop__form">
+                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя">
+                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон">
+                <button type="submit" class="call-pop__button-sumbit">Заказать звонок</button>
+              </form>
             </div>
           </div>
         </div>

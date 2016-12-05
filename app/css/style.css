@@ -8,8 +8,6 @@ ul {
 	margin: 0;
 }
 
-
-
 a,
 a:hover,
 a:focus {
@@ -18,10 +16,6 @@ a:focus {
 	outline: none;
 }
 
-
-
-
-
 html, body {
 	width: 100%;
 	height: 100%;
@@ -29,10 +23,12 @@ html, body {
 
 body {
 	display: table;
+	font-family: 'open_sansregular';
 }
 
 .main {
 	height: auto;
+	overflow: hidden;
 }
 
 .footer {
@@ -55,7 +51,7 @@ body {
 	display: inline-block;
 	background: #2a2a2a;
 	height: 44px;
-	line-height: 44px;
+	line-height: 42px;
 	color: #bfa48d;
 }
 
@@ -71,6 +67,7 @@ body {
 	padding: 15px 0;
 	font-size: 14px;
 	color: #c6aa92;
+	font-family: 'anglecia_pro_displayregular';
 } 
 
 .header__info {
@@ -304,8 +301,16 @@ body {
 	background-position: -133px -710px;
 }
 
+.left.carousel-controls:hover {
+	background-position: -133px -1013px;
+}
+
 .right.carousel-controls {
 	background-position: -133px -1316px;
+}
+
+.right.carousel-controls:hover {
+	background-position: -133px -1619px
 }
 
 .carousel-caption {
@@ -322,12 +327,14 @@ body {
 }
 
 .carousel-caption__title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 48px;
 	color: #bfa48d;
 	padding-top: 15px;
 }
 
 .carousel-caption__description {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 35px;
 	color: #bfa48d;
 	margin-bottom: 20px;
@@ -352,6 +359,7 @@ body {
 }
 
 .building__title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 28px;
 	margin-bottom: 35px;
 }
@@ -435,6 +443,7 @@ body {
 }
 
 .popular__title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 28px;
 	margin: 30px 0;
 	position: relative;
@@ -547,6 +556,7 @@ body {
 }
 
 .popular__description-title {
+	font-family: 'anglecia_pro_displaymedium';
 	font-size: 20px;
 	padding: 0 35px 0 70px;
 	margin-bottom: 20px;
@@ -635,11 +645,6 @@ body {
 	bottom: -40px;
 }
 
-
-
-
-
-
 .carousel-2__link:hover .carousel-2__link-img_hover {
 	opacity: 1;
 }
@@ -691,6 +696,7 @@ body {
 }
 
 .carousel-2__link-img_hover-description__title {
+	font-family: 'anglecia_pro_displaymedium';
 	margin-top: 40px;
 	margin-bottom: 25px;
 	font-size: 19px;
@@ -720,13 +726,12 @@ body {
 .carousel-2__link-img_hover-text {
 	font-size: 12px;
 	height: 45px;
-	line-height: 45px;
+	line-height: 41px;
 	display: inline-block;
 	width: 50%;
 	border-top: 2px solid #bfa48d;
 	border-bottom: 2px solid #bfa48d;
 }
-
 
 /***************
 ** Constructed *
@@ -746,6 +751,7 @@ body {
 }
 
 .constructed__title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 28px;
 	margin: 0 0 380px 0;
 }
@@ -839,15 +845,16 @@ body {
 	content: "";
 	display: block;
 	position: absolute;
-	background: url(../images/icons/triangle.png);
 	width: 60px;
 	height: 65px;
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: -80px;
+	background: url(../images/icons/sprite-slides.png) no-repeat -133px -1923px
 }
 
 .consultation-title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 25px;
 	margin-bottom: 40px;
 	position: relative;
@@ -899,6 +906,7 @@ body {
 }
 
 .form-title {
+	font-family: 'anglecia_pro_displayregular';
 	margin-bottom: 35px;
 	font-size: 25px;
 } 
@@ -911,7 +919,6 @@ body {
 }
 
 ::-webkit-input-placeholder {
-	font-size: 11px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 65px;
@@ -969,6 +976,7 @@ body {
 }
 
 .info-list__title {
+	font-family: 'anglecia_pro_displayregular';
 	font-size: 17px;
 	color: #c6aa92;
 	margin-bottom: 20px;
@@ -980,6 +988,7 @@ body {
 }
 
 .footer-subtitle {
+	font-family: 'anglecia_pro_displayregular';
 	color: #bfa48d;
 	font-size: 13px;
 	padding-left: 53px;
@@ -1022,6 +1031,10 @@ body {
 	display: block;
 }
 
+.subnav-link:hover {
+	color: #bfa48d;
+}
+
 .footer-social-list {
 	padding-left: 53px;
 	line-height: 0;
@@ -1043,8 +1056,16 @@ body {
 	background-position: -50px -50px;
 }
 
+.footer-social-link_fb:hover {
+	background-position: -161px -50px;
+}
+
 .footer-social-link_inst {
 	background-position: -270px -50px;
+}
+
+.footer-social-link_inst:hover {
+	background-position: -48px -175px;
 }
 
 .footer .container .row-2 {
@@ -1066,4 +1087,72 @@ body {
 	font-size: 10px;
 	color: #cdcdcd;
 }
+
+
+/****************
+** call pop-up **
+****************/
+
+.call-pop__close-button {
+	position: absolute;
+	top: 33px;
+	right: 36px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icons/pop-close.png) no-repeat;
+}
+
+.call-pop-up__dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	text-align: center;
+}
+
+.call-pop__container {
+	background: #fff;
+	min-height: 500px;
+	padding: 90px 65px;
+}
+
+.call-pop__title {
+	font-family: 'anglecia_pro_displaymedium';
+	font-size: 25px;
+	margin-bottom: 5px;
+	color: #2a2a2a;
+}
+
+.call-pop__description {
+	font-size: 12px;
+	color: #8a8a8a;
+	margin-bottom: 35px;
+	padding: 0 10%;
+}
+
+.call-pop__input {
+	height: 50px;
+	border: 1px solid #bfa48d;
+	padding: 15px;
+	font-size: 15px;
+	color: black;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.call-pop__button-sumbit {
+	letter-spacing: 1px;
+	font-family: 'open_sansbold';
+	background: #88c048;
+	height: 60px;
+	line-height: 60px;
+	font-size: 13px;
+	text-transform: uppercase;
+	width: 257px;
+	color: #fff;
+	outline: none;
+	border: none;
+}
+
 
