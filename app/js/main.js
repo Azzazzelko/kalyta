@@ -1,49 +1,19 @@
-(function(){
+$(function() {
 
-	var jcarousel = $('.jcarousel');
+  var sliderMin = parseInt( $(".slider-range").attr("data-min") ), //значение дата-атрибута мин
+      sliderMax = parseInt( $(".slider-range").attr("data-max") ); //значение дата-атрибута макс
 
-	jcarousel
-	.on('jcarousel:reload jcarousel:create', function () {
-		var carousel = $(this),
-		width = carousel.innerWidth();
+  $(".slider-range").slider({
+    range: true,
+    min: sliderMin,                    // минимум слайдера
+    max: sliderMax,                    // максимум слайдера
+    values: [ sliderMin, sliderMax ],  // значение на которое головки встанут
+    slide: function( event, ui ) {
+      $("#slider-amount").text(ui.values[0] + " м² - " + ui.values[1]+" м²");  //показываем изменение слайдера 
+    }
+  });
 
-		if (width >= 600) {
-			width = width / 3;
-		} else if (width >= 350) {
-			width = width / 2;
-		}
-
-		carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-	})
-	.jcarousel({
-		wrap: 'circular'
-	});
-
-	$('.jcarousel-control-prev')
-	.jcarouselControl({
-		target: '-=1'
-	});
-
-	$('.jcarousel-control-next')
-	.jcarouselControl({
-		target: '+=1'
-	});
-
-	$('.jcarousel-pagination')
-	.on('jcarouselpagination:active', 'a', function() {
-		$(this).addClass('active');
-	})
-	.on('jcarouselpagination:inactive', 'a', function() {
-		$(this).removeClass('active');
-	})
-	.on('click', function(e) {
-		e.preventDefault();
-	})
-	.jcarouselPagination({
-		perPage: 1,
-		item: function(page) {
-			return '<a href="#' + page + '">' + page + '</a>';
-		}
-	});
+  $("#slider-amount").text(sliderMin + " м² - " + sliderMax+" м²");   //изначальные значения с дата атрибутов
 
 }());
+

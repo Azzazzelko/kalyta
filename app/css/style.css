@@ -1,3 +1,9 @@
+/****************************
+*****************************
+----------- main ------------
+*****************************
+****************************/
+
 * {
 	box-sizing: border-box;
 }
@@ -301,7 +307,7 @@ body {
 	background-position: -133px -710px;
 }
 
-.left.carousel-controls:hover {
+#carousel .left.carousel-controls:hover {
 	background-position: -133px -1013px;
 }
 
@@ -309,7 +315,7 @@ body {
 	background-position: -133px -1316px;
 }
 
-.right.carousel-controls:hover {
+#carousel  .right.carousel-controls:hover {
 	background-position: -133px -1619px
 }
 
@@ -1154,5 +1160,3 @@ body {
 	outline: none;
 	border: none;
 }
-
-
