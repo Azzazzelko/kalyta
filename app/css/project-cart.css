@@ -1,0 +1,280 @@
+/**************
+** Page Head **
+**************/
+
+.page-head {
+	min-height: 130px;
+	background: url(../images/catalog-bg.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.page-head:before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.75);
+}
+
+.breadcrumbs-list {
+	margin-top: 85px;
+}
+
+.breadcrumbs-item {
+	font-family: 'anglecia_pro_displayregular';
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+	color: #bfa48d;
+	font-size: 16px;
+}
+
+.breadcrumbs-item:after {
+	position: absolute;
+	content: "/";
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.breadcrumbs-item_active:after {
+	display: none;
+}
+
+.breadcrumbs-link {
+	display: block;
+}
+
+.breadcrumbs-item_active {
+	color: #cdcdcd;
+}
+
+/**********
+** card ***
+**********/
+
+.card {
+	margin-bottom: 25px;
+}
+
+.page-title {
+	font-size: 30px;
+	color: #bfa48d;
+	margin-bottom: 60px;
+	text-align: center;
+	font-family: 'anglecia_pro_displayregular';
+}
+
+.slider-card {
+	height: 500px;
+	margin-bottom: 15px;
+}
+
+.slider-thumbs__item {
+	height: 110px;
+}
+
+.slider-thumbs__link {
+	display: block;
+	cursor: pointer;
+}
+
+.slider-thumbs {
+	margin-bottom: 15px;
+}
+
+.slider-card-info {
+	text-align: center;
+	border: 1px solid #bfa48d;
+	height: 500px;
+	padding: 30px;
+	margin-bottom: 15px;
+}
+
+.card-info__subtitle {
+	color: #2a2a2a;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.card-info__ammount {
+	color: #bfa48d;
+	font-size: 43px;
+	line-height: 43px;
+	font-family: 'anglecia_pro_displaymedium';
+}
+
+.card-info__ammount_sm {
+	color: #bfa48d;
+	font-size: 17px;
+}
+
+.card-info-download {
+	color: #bfa48d;
+	font-size: 13px;
+	font-family: 'open_sansbold';
+}
+
+.card-info-download:hover,
+.card-info-download:focus {
+	color: #bfa48d;
+}
+
+.card-info-consultation {
+	font-family: 'open_sansbold';
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	background: #88c048;
+	text-align: center;
+	width: 85.5%;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.card-info-consultation:hover,
+.card-info-consultation:focus {
+	color: #fff;
+}
+
+.card-info-row-1,
+.card-info-row-2,
+.card-info-row-3,
+.card-info-row-4 {
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e9dfd7; 
+}
+
+.card-info-row-2_block {
+	width: 50%;
+	display: inline-block;
+}
+
+.slider-card-subinfo {
+	border: 1px solid #bfa48d;
+	height: 110px;
+	padding: 25px 20px 20px 20px;
+	margin-bottom: 15px;
+}
+
+.slider-card-subinfo__item {
+	font-size: 12px;
+	color: #2a2a2a;
+	display: inline-block;
+	width: 48%;
+	margin-bottom: 25px;
+}
+
+.slider-card-subinfo__item_bold {
+	color: #bfa48d;
+}
+
+.card-icons-list {
+	margin-bottom: 50px;
+}
+
+.card-icons-item__icon {
+	background: #fbf5f0;
+	display: block;
+	height: 110px;
+	padding-top: 70px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.card-description {
+	font-size: 15px;
+}
+
+/***********
+*** price **
+***********/
+
+.price-title {
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.price-tab-list {
+	border-bottom: 1px solid #bfa48d;
+}
+
+.price-tab-item {
+	font-size: 20px;
+	margin-right: 60px;
+	position: relative;
+}
+
+.price-tab-item.active:before,
+.price-tab-item:hover:before {
+	position: absolute;
+	height: 100%;
+	display: block;
+	content: "";
+	height: 4px;
+	bottom: -4px;
+	left: 0;
+	width: 100%;
+	background: #bfa48d;
+}
+
+.price-tab-link,
+.price-tab-link .active {
+	background: none !important;
+	border: none !important;
+}
+
+.tab-content {
+	padding: 40px 0;
+	margin-bottom: 20px;
+}
+
+.tab-pane {
+	position: relative;
+}
+
+.tab-content__price {
+	font-size: 43px;
+	color: #bfa48d;
+	font-family: 'anglecia_pro_displaymedium';
+	height: 100px;
+	line-height: 100px;
+	border-top: 1px solid #bfa48d;
+	border-bottom: 1px solid #bfa48d;
+	position: absolute;
+	right: 0;
+	top: 85px;
+	text-align: center;
+}
+
+.tab-wall__item {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.tab-wall__item:last-child {
+	margin-bottom: 0;
+}
+
+.tab-wall__item-title {
+	font-family: 'open_sansbold';
+	font-size: 17px;
+	color: #bfa48d;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+
+.tab-wall__item-description {
+	font-size: 17px;
+	color: #2a2a2a; 
+}
+
