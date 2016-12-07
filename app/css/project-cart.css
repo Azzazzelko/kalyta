@@ -76,6 +76,21 @@
 	margin-bottom: 15px;
 }
 
+.slider-card__c-left,
+.slider-card__c-right {
+	background: url(../images/icons/sprite-slides.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 18px;
+	height: 40px;
+	background-position: -133px -1013px;
+}
+
+.slider-card__c-right {
+	background-position: -133px -1619px;
+}
+
 .slider-thumbs__item {
 	height: 110px;
 }
@@ -186,9 +201,57 @@
 	background: #fbf5f0;
 	display: block;
 	height: 110px;
-	padding-top: 70px;
+	padding-top: 75px;
 	text-align: center;
 	font-size: 12px;
+	position: relative;
+}
+
+.card-icons-item__icon:before {
+	position: absolute;
+	display: block;
+	content: "";
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20px;
+	background: url(../images/icons/sprite-card.png) no-repeat;
+}
+
+.card-icons-item__icon.icon-1:before {
+	width: 39px;
+	height: 48px;
+	background-position: -125px -125px;
+}
+
+.card-icons-item__icon.icon-2:before {
+	width: 50px;
+	height: 47px;
+	background-position: -125px -423px;
+}
+
+.card-icons-item__icon.icon-3:before {
+	width: 48px;
+	height: 47px;
+	background-position: -125px -720px;
+}
+
+.card-icons-item__icon.icon-4:before {
+	width: 57px;
+	height: 48px;
+	background-position: -125px -1017px;
+}
+
+.card-icons-item__icon.icon-5:before {
+	width: 39px;
+	height: 46px;
+	background-position: -125px -1315px;
+}
+
+.card-icons-item__icon.icon-6:before {
+	width: 51px;
+	height: 25px;
+	top: 35px;
+	background-position: -125px -1611px;
 }
 
 .card-description {
@@ -278,3 +341,10 @@
 	color: #2a2a2a; 
 }
 
+/******************
+** consultat-pop **
+******************/
+
+.consultation-pop-up__container {
+	padding: 50px 65px 40px 65px;
+}

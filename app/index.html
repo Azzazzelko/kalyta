@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
   <link rel="stylesheet" href="fonts/fonts.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media/main-media.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -708,14 +709,18 @@
               <div class="call-pop__title">Заказать звонок</div>
               <div class="call-pop__description">Обратите внимание, все поля обязательны для заполнения</div>
               <form action="#" class="call-pop__form">
-                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя">
-                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон">
+                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя" name="name">
+                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон" name="tel">
                 <button type="submit" class="call-pop__button-sumbit">Заказать звонок</button>
               </form>
             </div>
           </div>
         </div>
 
+        <!-- Scroll-top -->
+        <div class="scroll-top-wrapper">
+          <div class="scroll-top"></div>
+        </div>
       </main>
 
       <footer class="footer">

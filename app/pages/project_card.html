@@ -127,7 +127,7 @@
           </div>
         </div>
 
-        <!-- card -->
+        <!-- Card -->
         <div class="container card">
           <div class="row">
             <div class="col-lg-12">
@@ -154,10 +154,10 @@
                     </div>
 
                     <a class="left carousel-control" href="#carousel-card" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="slider-card__c-left"></span>
                     </a>
                     <a class="right carousel-control" href="#carousel-card" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="slider-card__c-right"></span>
                     </a>
 
                   </div>
@@ -212,7 +212,7 @@
                   <a href="#" class="card-info-download">Скачать карточку проекта</a>
                 </div>
                 <div class="card-info-row-5">
-                  <a href="#" class="card-info-consultation">Получить консультацию</a>
+                  <a href=".consultation-pop-up" class="card-info-consultation" data-toggle="modal">Получить консультацию</a>
                 </div>
               </div>
               <div class="slider-card-subinfo">
@@ -235,22 +235,22 @@
             <div class="col-lg-12">
               <ul class="card-icons-list row">
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Терраса</div>
+                  <div class="card-icons-item__icon icon-1">Терраса</div>
                 </li>
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Второй свет</div>
+                  <div class="card-icons-item__icon icon-2">Второй свет</div>
                 </li>
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Гараж/Навес</div>
+                  <div class="card-icons-item__icon icon-3">Гараж/Навес</div>
                 </li>
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Сауна/Баня</div>
+                  <div class="card-icons-item__icon icon-4">Сауна/Баня</div>
                 </li>
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Кабинет</div>
+                  <div class="card-icons-item__icon icon-5">Кабинет</div>
                 </li>
                 <li class="card-icons-item col-lg-2">
-                  <div class="card-icons-item__icon">Бассейн</div>
+                  <div class="card-icons-item__icon icon-6">Бассейн</div>
                 </li>
               </ul>
             </div>
@@ -286,7 +286,7 @@
                 </li>
               </ul>
               <div class="tab-content">
-                <div class="tab-pane row active" id="wall">
+                <div class="tab-pane fade in row active" id="wall">
                   <ul class="tab-wall__list col-lg-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Фундамент:</div>
@@ -315,7 +315,7 @@
                   </ul>
                   <div class="tab-content__price col-lg-4">7 750 000 руб.</div>
                 </div>
-                <div class="tab-pane row" id="warm">
+                <div class="tab-pane fade row" id="warm">
                   <ul class="tab-wall__list col-lg-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Фундамент:</div>
@@ -344,7 +344,7 @@
                   </ul>
                   <div class="tab-content__price col-lg-4">7 750 000 руб.</div>
                 </div>
-                <div class="tab-pane row" id="premiun">
+                <div class="tab-pane fade row" id="premiun">
                   <ul class="tab-wall__list col-lg-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Стены:</div>
@@ -378,6 +378,23 @@
           </div>
         </div>
 
+        <!-- Consultation Pop-Up -->
+        <div class="modal fade consultation-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="call-pop-up__dialog">
+            <div class="call-pop__container consultation-pop-up__container">
+              <a href="#" class="call-pop__close-button" data-dismiss="modal"></a>
+              <div class="call-pop__title">Заказать консультацию</div>
+              <div class="call-pop__description">Обратите внимание, все поля обязательны для заполнения</div>
+              <form action="#" class="call-pop__form">
+                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя" name="name">
+                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон" name="tel">
+                <input type="text" class="call-pop__input c-p-form__email" placeholder="Электронная почта" name="email">
+                <button type="submit" class="call-pop__button-sumbit">Получить консультацию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <!-- Call Pop-Up -->
         <div class="modal fade call-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="call-pop-up__dialog">
@@ -386,14 +403,18 @@
               <div class="call-pop__title">Заказать звонок</div>
               <div class="call-pop__description">Обратите внимание, все поля обязательны для заполнения</div>
               <form action="#" class="call-pop__form">
-                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя">
-                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон">
+                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя" name="name">
+                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон" name="tel">
                 <button type="submit" class="call-pop__button-sumbit">Заказать звонок</button>
               </form>
             </div>
           </div>
         </div>
 
+        <!-- Scroll-top -->
+        <div class="scroll-top-wrapper">
+          <div class="scroll-top"></div>
+        </div>
       </main>
 
       <footer class="footer">

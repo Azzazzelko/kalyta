@@ -1,0 +1,150 @@
+/*****************
+**** MEDIA *******
+*****************/
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	html {
+		font-size: 14px;
+	}
+
+	.header__tel {
+		font-size: 1rem;
+	}
+	
+	.carousel-caption__title {
+		font-size: 1.571rem;
+	}
+
+	.carousel-caption__description {
+		font-size: 1.214rem;
+	}
+
+	.button-carousel {
+		font-size: 0.714rem;
+	}
+
+	.building__title {
+		font-size: 1.214rem;
+	}
+
+	.button-building {
+		font-size: 0.714rem;
+	}
+
+	.building-item {
+		font-size: 0.714rem;
+	}
+
+	.popular__image_hover {
+		font-size: 0.714rem;
+	}
+
+	.popular__description-title {
+		font-size: 1rem;
+	}
+
+	.popular__description-item {
+		font-size: 0.786rem;
+	}
+
+	.popular__button {
+		font-size: 0.875rem;
+	}
+
+	.constructed__title {
+		font-size: 1.214rem;
+	}
+
+	.carousel-2__link-img_hover-description__title {
+		font-size: 0.875rem;
+	}
+
+	.carousel-2__link-img_hover-description__item {
+		font-size: 0.714rem;
+	}
+
+	.carousel-2__link-img_hover-text {
+		font-size: 0.643rem;
+	}
+
+	.constructed__button {
+		font-size: 0.875rem;
+	}
+
+	.services__text {
+		font-size: 0.875rem;
+	}
+
+	.consultation-title {
+		font-size: 1.143rem;
+	}
+
+	.consultation-description {
+		font-size: 0.875rem;
+	}
+
+	.form-title {
+		font-size: 1.143rem;
+	}
+
+	.form-control {
+		font-size: 0.643rem;
+	}
+
+	.button-form {
+		font-size: 0.714rem;
+	}
+
+	.info-list__title {
+		font-size: 0.786rem;
+	}
+
+	.info-list__descriprion {
+		font-size: 0.643rem;
+	}
+
+	.footer-subtitle {
+		font-size: 0.643rem;
+	}
+
+	.subnav-item {
+		font-size: 0.643rem;
+	}
+	
+	.footer-title {
+		font-size: 0.571rem;
+	}
+
+	.copyright-title,
+	.copyright-text {
+		font-size: 0.571rem;
+	}
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 16px;
+	}
+}

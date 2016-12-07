@@ -1,7 +1,5 @@
 /****************************
-*****************************
 ----------- main ------------
-*****************************
 ****************************/
 
 * {
@@ -62,7 +60,7 @@ body {
 	display: inline-block;
 	background: #2a2a2a;
 	height: 44px;
-	line-height: 42px;
+	line-height: 2.625rem;
 	color: #bfa48d;
 }
 
@@ -76,7 +74,7 @@ body {
 
 .header__top {
 	padding: 15px 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #c6aa92;
 	font-family: 'anglecia_pro_displayregular';
 } 
@@ -98,7 +96,7 @@ body {
 .header__tel {
 	background: url(../images/icons/sprite-head.png) no-repeat;
 	background-position: -50px -46px;
-	font-size: 17px;
+	font-size: 1.063rem;
 	vertical-align: middle;
 	display: inline-block;
 	margin-left: 15px;
@@ -117,7 +115,7 @@ body {
 
 .nav-item {
 	position: relative;
-	line-height: 130px;
+	line-height: 8.125rem;
 	margin-right: 35px;
 	display: inline-block !important;
 }
@@ -128,7 +126,7 @@ body {
 
 .nav-link {
 	display: block;
-	font-size: 16px;
+	font-size: 1rem;
 	position: relative;
 }
 
@@ -177,14 +175,14 @@ body {
 }
 
 .nav-dropdown__item {
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 0.875rem;
+	line-height: 0.875rem;
 	text-align: left;
 	margin-bottom: 15px;
 }
 
 .nav-dropdown__link {
-	line-height: 23px;
+	line-height: 1.438rem;
 	display: block;
 	padding-left: 25px;
 	background: url(../images/icons/sprite-head.png) no-repeat;
@@ -339,20 +337,20 @@ body {
 
 .carousel-caption__title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 48px;
+	font-size: 3rem;
 	color: #bfa48d;
 	padding-top: 15px;
 }
 
 .carousel-caption__description {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 35px;
+	font-size: 2.188rem;
 	color: #bfa48d;
 	margin-bottom: 20px;
 }
 
 .button-carousel {
-	font-size: 17px;
+	font-size: 1.063rem;
 	background: transparent;
 }
 
@@ -371,14 +369,14 @@ body {
 
 .building__title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 28px;
+	font-size: 1.750rem;
 	margin-bottom: 35px;
 }
 
 .button-building,
 .button-building:hover,
 .button-building:focus {
-	font-size: 12px;
+	font-size: 0.750rem;
 	color: #c6aa92;
 	margin-bottom: 55px;
 }
@@ -421,7 +419,7 @@ body {
 	display: inline-block;
 	width: 100px;
 	line-height: normal;
-	font-size: 12px;
+	font-size: 0.750rem;
 	text-align: center;
 }
 
@@ -455,7 +453,7 @@ body {
 
 .popular__title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 28px;
+	font-size: 1.750rem;
 	margin: 30px 0;
 	position: relative;
 }
@@ -531,8 +529,8 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 100%;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 0.875rem;
+	line-height: 0.875rem;
 	color: #bfa48d;
 	text-align: center;
 }
@@ -568,7 +566,7 @@ body {
 
 .popular__description-title {
 	font-family: 'anglecia_pro_displaymedium';
-	font-size: 20px;
+	font-size: 1.250rem;
 	padding: 0 35px 0 70px;
 	margin-bottom: 20px;
 	position: relative;
@@ -592,14 +590,14 @@ body {
 .popular__description-item {
 	padding: 0 35px 0 70px;
 	margin-bottom: 5px;
-	font-size: 17px;
+	font-size: 1.063rem;
 	margin-bottom: 0;
 }
 
 .popular__button,
 .popular__button:hover,
 .popular__button:focus {
-	font-size: 17px;
+	font-size: 1.063rem;
 	width: 100%;
 	color: #c6aa92;
 	margin-bottom: 35px;
@@ -710,7 +708,7 @@ body {
 	font-family: 'anglecia_pro_displaymedium';
 	margin-top: 40px;
 	margin-bottom: 25px;
-	font-size: 19px;
+	font-size: 1.188rem;
 	position: relative;
 }
 
@@ -731,13 +729,13 @@ body {
 }
 
 .carousel-2__link-img_hover-description__item {
-	font-size: 15px;
+	font-size: 0.938rem;
 }
 
 .carousel-2__link-img_hover-text {
-	font-size: 12px;
+	font-size: 0.750rem;
 	height: 45px;
-	line-height: 41px;
+	line-height: 2.929rem;
 	display: inline-block;
 	width: 50%;
 	border-top: 2px solid #bfa48d;
@@ -763,14 +761,14 @@ body {
 
 .constructed__title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 28px;
+	font-size: 1.750rem;
 	margin: 0 0 380px 0;
 }
 
 .constructed__button,
 .constructed__button:hover,
 .constructed__button:focus {
-	font-size: 17px;
+	font-size: 1.063rem;
 	color: #c6aa92;
 }
 
@@ -833,7 +831,7 @@ body {
 .services__text {
 	text-align: left;
 	display: inline-block;
-	font-size: 17px;
+	font-size: 1.063rem;
 	color: #bfa48d;
 	padding-left: 85px;
 }
@@ -866,7 +864,7 @@ body {
 
 .consultation-title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 25px;
+	font-size: 1.563rem;
 	margin-bottom: 40px;
 	position: relative;
 }
@@ -883,7 +881,7 @@ body {
 }
 
 .consultation-description {
-	font-size: 17px;
+	font-size: 1.063rem;
 }
 
 .form-container {
@@ -919,11 +917,11 @@ body {
 .form-title {
 	font-family: 'anglecia_pro_displayregular';
 	margin-bottom: 35px;
-	font-size: 25px;
+	font-size: 1.563rem;
 } 
 
 .form-control {
-	font-size: 11px;
+	font-size: 0.688rem;
 	height: 30px;
 	border-radius: 0 !important;
 	border: 1px solid #bfa48d;
@@ -932,7 +930,7 @@ body {
 ::-webkit-input-placeholder {
 	text-align: center;
 	vertical-align: middle;
-	line-height: 65px;
+	line-height: 4.063rem;
 }
 
 .form-area {
@@ -943,7 +941,7 @@ body {
 .button-form,
 .button-form:hover,
 .button-form:focus {
-	font-size: 17px; 
+	font-size: 1.063rem; 
 	color: #c6aa92;
 	padding: 0;
 	outline: none;
@@ -988,20 +986,20 @@ body {
 
 .info-list__title {
 	font-family: 'anglecia_pro_displayregular';
-	font-size: 17px;
+	font-size: 1.063rem;
 	color: #c6aa92;
 	margin-bottom: 20px;
 }
 
 .info-list__descriprion {
-	font-size: 12px;
+	font-size: 0.750rem;
 	color: #fff;
 }
 
 .footer-subtitle {
 	font-family: 'anglecia_pro_displayregular';
 	color: #bfa48d;
-	font-size: 13px;
+	font-size: 0.813rem;
 	padding-left: 53px;
 	margin-bottom: 15px;
 	position: relative;
@@ -1030,7 +1028,7 @@ body {
 
 .subnav-item {
 	color: #cdcdcd;
-	font-size: 12px;
+	font-size: 0.750rem;
 	margin-bottom: 15px; 
 }
 
@@ -1088,14 +1086,14 @@ body {
 *************/
 
 .footer-title {
-	font-size: 12px;
+	font-size: 0.750rem;
 	color: #cdcdcd;
 	margin-bottom: 15px;
 }
 
 .copyright-text, 
 .copyright-title {
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: #cdcdcd;
 }
 
@@ -1130,13 +1128,13 @@ body {
 
 .call-pop__title {
 	font-family: 'anglecia_pro_displaymedium';
-	font-size: 25px;
+	font-size: 1.563rem;
 	margin-bottom: 5px;
 	color: #2a2a2a;
 }
 
 .call-pop__description {
-	font-size: 12px;
+	font-size: 0.750rem;
 	color: #8a8a8a;
 	margin-bottom: 35px;
 	padding: 0 10%;
@@ -1146,7 +1144,7 @@ body {
 	height: 50px;
 	border: 1px solid #bfa48d;
 	padding: 15px;
-	font-size: 15px;
+	font-size: 0.938rem;
 	color: black;
 	margin-bottom: 30px;
 	width: 100%;
@@ -1157,11 +1155,47 @@ body {
 	font-family: 'open_sansbold';
 	background: #88c048;
 	height: 60px;
-	line-height: 60px;
-	font-size: 13px;
+	line-height: 3.750rem;
+	font-size: 0.813rem;
 	text-transform: uppercase;
 	width: 257px;
 	color: #fff;
 	outline: none;
 	border: none;
+}
+
+/***************
+** scroll-top **
+***************/
+
+.scroll-top-wrapper {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+	width: 45px;
+	height: 45px;
+	right: 30px;
+	bottom: 30px;
+	transition: all 0.5s ease-in-out;
+	border-radius: 10px;
+}
+
+.scroll-top {
+	background: url(../images/icons/sprite-card.png) no-repeat;
+	background-position: -121px -1874px;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+
+.scroll-top-wrapper.show:hover {
+	background: #eee;
 }
