@@ -18,20 +18,20 @@
     </head>
     <body>
       <header class="header">
-        <div class="container-fluid">
+        <div class="header__top_bg hidden-xs">
           <div class="container">
             <div class="row header__top">
-              <div class="col-lg-3 pull-left">
+              <div class="col-sm-3 pull-left">
                 <a href="mailto:info@kalitahouse.ru" class="header__info">info@kalitahouse.ru</a>
               </div>
-              <div class="col-lg-4 pull-right text-right">
+              <div class="col-sm-5 pull-right text-right">
                 <a href=".call-pop-up" class="header__call" data-toggle="modal">Заказать звонок</a>
                 <div class="header__tel">+7(495)729-18-86</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container hidden-xs">
           <ul class="nav-list text-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Проекты</a>
@@ -61,7 +61,7 @@
             <li class="nav-item nav-item_logo">
               <a class="nav-link" href="#">
                 <h1 class="sr-only">Калита</h1>
-                <img class="logo" src="images/logo.png" alt="logo">
+                <img class="logo img-responsive" src="images/logo.png" alt="logo">
               </a>
             </li>
             <li class="nav-item">
@@ -104,6 +104,89 @@
             </li>
           </ul>
         </div>
+        <div class="container header__xs visible-xs">
+          <div class="header__xs-wrapper">
+            <a href="#mobile-nav" class="h-mobile__menu" data-toggle="collapse"></a>
+            <nav class="mobile-nav collapse container" id="mobile-nav">
+              <div class="mobile-nav-wrapper">
+                <div class="mobile-nav__tel">+7 (495) 729-18-86</div>
+                <a href="mailto:info@kalitahouse.ru" class="mobile-nav__email">info@kalitahouse.ru</a>
+                <a href="#mobile-nav" data-toggle="collapse" class="mobile-nav__button-close"></a>
+                <div class="mobile-nav__accordion" id="mobile-nav__accordion">
+                  <ul class="accordion-list" id="accordion-list">
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Проекты</a>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Построенные дома</a>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-1" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Услуги
+                      </a>
+                      <ul id="accordion-collapse-1" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Строительство</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Индивидуальное проектирование</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Погонаж бревна</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Коммерческое строительство</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-2" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Техноголии
+                      </a>
+                      <ul id="accordion-collapse-2" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ручная рубка</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Канадская технология Post&Beam</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Сборка клееного бруса</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-3" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        О компании
+                      </a>
+                      <ul id="accordion-collapse-3" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">О нас</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Партнеры</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Новости компании</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ответы на вопросы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <a href="#" class="h-mobile__logo-link">
+              <img src="images/logo-xs.png" alt="logo" class="h-mobile__logo-img img-responsive">
+            </a>
+            <a href=".call-pop-up" data-toggle="modal" class="h-mobile__call"></a>
+          </div> 
+        </div>
       </header>
 
       <main class="main">
@@ -113,11 +196,13 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              <div class="slide-img_shading">
+                <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              </div>
               <div class="carousel-caption">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-6 col-centered carousel-caption_shading">
+                    <div class="col-sm-8 col-centered carousel-caption_shading">
                       <div class="carousel-caption__title">
                         «Канада Крым»
                       </div>
@@ -125,7 +210,7 @@
                         2 388 м²
                       </div>
                       <div class="row">
-                        <div class="col-lg-4 col-centered">
+                        <div class="col-sm-3 col-centered">
                           <a href="#" class="button button-carousel">Проект</a>
                         </div>
                       </div>
@@ -135,11 +220,13 @@
               </div>
             </div>
             <div class="item">
-              <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              <div class="slide-img_shading">
+                <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              </div>
               <div class="carousel-caption">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-6 col-centered carousel-caption_shading">
+                    <div class="col-sm-8 col-centered carousel-caption_shading">
                       <div class="carousel-caption__title">
                         «Канада Крым 2»
                       </div>
@@ -147,7 +234,7 @@
                         2 388 м²
                       </div>
                       <div class="row">
-                        <div class="col-lg-4 col-centered">
+                        <div class="col-sm-4 col-centered">
                           <a href="#" class="button button-carousel">Проект</a>
                         </div>
                       </div>
@@ -157,11 +244,13 @@
               </div>
             </div>
             <div class="item">
-              <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              <div class="slide-img_shading">
+                <img class="slide-img img-responsive" src="images/slide-1.jpg" alt="img">
+              </div>
               <div class="carousel-caption">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-6 col-centered carousel-caption_shading">
+                    <div class="col-sm-8 col-centered carousel-caption_shading">
                       <div class="carousel-caption__title">
                         «Канада Крым 3»
                       </div>
@@ -169,7 +258,7 @@
                         2 388 м²
                       </div>
                       <div class="row">
-                        <div class="col-lg-4 col-centered">
+                        <div class="col-sm-4 col-centered">
                           <a href="#" class="button button-carousel">Проект</a>
                         </div>
                       </div>
@@ -183,18 +272,18 @@
           <!-- Indicators -->
           <div class="container indicators-container">
             <div class="row carousel-row-control">
-              <div class="col-lg-1 col-lg-offset-3 text-right">
+              <div class="col-sm-1 col-sm-offset-3 text-right hidden-xs">
                 <a class="left carousel-controls" href="#carousel" data-slide="prev">
                 </a>
               </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4 col-xs-4 centered-xs">
                 <ol class="carousel-indicators">
                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel" data-slide-to="1"></li>
                   <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
               </div>
-              <div class="col-lg-1 text-left">
+              <div class="col-sm-1 text-left hidden-xs">
                 <a class="right carousel-controls" href="#carousel" data-slide="next">
                 </a>
               </div>
@@ -205,15 +294,15 @@
         <!-- Building -->
         <div class="container">
           <div class="row building-row-1">
-            <div class="col-lg-8 col-centered text-center">
+            <div class="col-sm-8 col-centered text-center">
               <h2 class="building__title">Строительство и проектирование загородных домов премиум класса</h2>
             </div>
-            <div class="col-lg-2 col-centered">
+            <div class="col-sm-2 col-centered">
               <a href="#" class="button button-building">Получить консультацию</a>
             </div>
           </div>
-          <div class="row building-row-2">
-            <div class="col-lg-10 col-centered"">
+          <div class="row building-row-2 hidden-xs">
+            <div class="col-sm-10 col-centered"">
               <ul class="building-list">
                 <li class="building-item">
                   <div class="building-img-container">
@@ -235,7 +324,7 @@
                 </li>
                 <li class="building-item">
                   <div class="building-img-container">
-                    <img class="img-responsive" src="images/exclusive.png" alt="img">
+                    <img class="building-img img-responsive" src="images/exclusive.png" alt="img">
                   </div>
                   <span class="building-description">Эксклюзивное решение</span>
                 </li>
@@ -248,12 +337,12 @@
         <div class="popular">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-centered">
+              <div class="col-sm-4 col-centered">
                 <h2 class="popular__title">Популярные проекты</h2>
               </div>
             </div>
-            <ul class="row popular-list">
-              <li class="col-lg-4">
+            <ul class="row popular-list hidden-xs">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -268,7 +357,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="col-lg-4">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -283,7 +372,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="col-lg-4">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -298,7 +387,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="col-lg-4">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -313,7 +402,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="col-lg-4">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -328,7 +417,7 @@
                   </ul>
                 </a>
               </li>
-              <li class="col-lg-4">
+              <li class="col-sm-4">
                 <a href="#" class="popular__link">
                   <div class="popular__image-container">
                     <img src="images/project-1.png" alt="img" class="popular__image img-responsive">
@@ -344,8 +433,161 @@
                 </a>
               </li>
             </ul>
+            <div id="carousel-popular" class="carousel slide visible-xs" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                  <div class="carousel-caption">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-centered">
+                          <div class="carousel-caption__title">
+                            Шале-4
+                          </div>
+                          <ul class="carousel-caption__description-list">
+                            <li class="carousel-caption__description-item">
+                              250 м²
+                            </li>
+                            <li class="carousel-caption__description-item">
+                              7 750 000 руб.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Indicators -->
+              <div class="container indicators-container">
+                <div class="row carousel-row-control">
+                  <div class="col-centered">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-popular" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-popular" data-slide-to="1"></li>
+                      <li data-target="#carousel-popular" data-slide-to="2"></li>
+                      <li data-target="#carousel-popular" data-slide-to="3"></li>
+                      <li data-target="#carousel-popular" data-slide-to="4"></li>
+                      <li data-target="#carousel-popular" data-slide-to="5"></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
-              <div class="col-lg-2 col-centered">
+              <div class="col-sm-2 col-centered">
                 <a href="#" class="button popular__button">Каталог</a>
               </div>
             </div>
@@ -355,28 +597,184 @@
         <!-- Constructed -->
         <div class="container container-constructed">
           <div class="row">
-            <div class="col-lg-6 col-centered constructed">
+            <div class="col-sm-6 col-centered constructed">
               <div class="row">
                 <h2 class="constructed__title">Построенные объекты</h2>
               </div>
+
+              <!-- Carousel-Constructed_xs -->
+              <div id="carousel-constructed" class="carousel slide carousel-constructed visible-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img class="slide-img img-responsive" src="images/project-1.png" alt="img">
+                    <div class="carousel-caption">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-centered">
+                            <div class="carousel-caption__title">
+                              Красивый дом
+                            </div>
+                            <ul class="carousel-caption__description-list">
+                              <li class="carousel-caption__description-item">
+                                250 м²
+                              </li>
+                              <li class="carousel-caption__description-item">
+                                Клееный брус
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Indicators -->
+                <div class="container indicators-container">
+                  <div class="row carousel-row-control">
+                    <div class="col-centered">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-constructed" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-constructed" data-slide-to="1"></li>
+                        <li data-target="#carousel-constructed" data-slide-to="2"></li>
+                        <li data-target="#carousel-constructed" data-slide-to="3"></li>
+                        <li data-target="#carousel-constructed" data-slide-to="4"></li>
+                        <li data-target="#carousel-constructed" data-slide-to="5"></li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="row">
-                <div class="col-lg-4 col-centered">
+                <div class="col-sm-4 col-centered">
                   <a href="#" class="button constructed__button">Галерея</a>
                 </div>
               </div>
             </div>
 
-            <!-- Carousel -->
-            <div id="carousel-2" class="carousel slide carousel-2" data-ride="carousel">
+            <!-- Carousel-2 -->
+            <div id="carousel-2" class="carousel slide carousel-2 hidden-xs" data-ride="carousel">
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
                   <div class="container">
                     <div class="row">
-                      <div class="col-lg-12">
+                      <div class="col-sm-12">
                         <div class="row">
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-1.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -399,7 +797,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-1.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -422,7 +820,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-1.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -453,9 +851,9 @@
                 <div class="item">
                   <div class="container">
                     <div class="row">
-                      <div class="col-lg-12">
+                      <div class="col-sm-12">
                         <div class="row">
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-2.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -478,7 +876,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-2.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -501,7 +899,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-2.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -532,9 +930,9 @@
                 <div class="item">
                   <div class="container">
                     <div class="row">
-                      <div class="col-lg-12">
+                      <div class="col-sm-12">
                         <div class="row">
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-3.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -557,7 +955,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-3.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -580,7 +978,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="#" class="col-lg-4 carousel-2__link">
+                          <a href="#" class="col-sm-4 carousel-2__link">
                             <div class="carousel-2__link-container">
                               <img class="img-responsive" src="images/project-3.png" alt="img">
                               <div class="carousel-2__link-img_hover">
@@ -611,27 +1009,26 @@
               </div>
 
               <!-- Indicators -->
-              <div class="container indicators-position">
+              <div class="indicators-position">
                 <div class="row carousel-row-control">
-                  <div class="col-lg-1 col-lg-offset-4 text-right">
+                  <div class="col-sm-1 col-sm-offset-4 text-right">
                     <a class="left carousel-controls carousel-2-controls" href="#carousel-2" data-slide="prev">
                     </a>
                   </div>
-                  <div class="col-lg-2">
+                  <div class="col-sm-2">
                     <ol class="carousel-indicators carousel-2-indicators">
                       <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-2" data-slide-to="1"></li>
                       <li data-target="#carousel-2" data-slide-to="2"></li>
                     </ol>
                   </div>
-                  <div class="col-lg-1 text-left">
+                  <div class="col-sm-1 text-left">
                     <a class="right carousel-controls carousel-2-controls" href="#carousel-2" data-slide="next">
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -666,32 +1063,32 @@
         <!-- Consultation -->
         <div class="container consultation">
           <div class="row row-1">
-            <div class="col-lg-8 col-centered">
+            <div class="col-sm-8 col-centered">
               <h2 class="consultation-title">H2 - сео ключевое слово в заголовке</h2>
               <div class="consultation-description">Строительство элитных деревянных домов из кедра, лиственницы, сосны, больших диаметров (ф 300 - 850), домов из клееного бруса по внеусадочной технологии, комбинированных домов и домов «шале».
               </div>
             </div>
           </div>
           <div class="row row-2">
-            <div class="col-lg-6 col-centered">
+            <div class="col-sm-6 col-centered">
               <div class="form-container">
                 <div class="form-title">Заказать консультацию</div>
                 <form class="form-horizontal" role="form" action="#">
-                  <div class="form-group">
-                    <div class="col-lg-4 col-lg-offset-2">
+                  <div class="form-group form-group_reverse">
+                    <div class="col-sm-4 col-sm-offset-2">
                       <input type="email" class="form-control form-email" placeholder="E-mail">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                       <input type="text" class="form-control form-tel" placeholder="Телефон">
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-8 col-sm-offset-2">
                       <textarea class="form-control form-area" placeholder="Ваш комментарий"></textarea>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-lg-4 col-lg-offset-4">
+                    <div class="col-sm-4 col-sm-offset-4">
                       <button type="submit" class="button button-form">Отправить</button>
                     </div>
                   </div>
@@ -700,7 +1097,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Call Pop-Up -->
         <div class="modal fade call-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="call-pop-up__dialog">
@@ -726,21 +1123,21 @@
       <footer class="footer">
         <div class="container">
           <div class="row row-1">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <ul class="footer-info-list row">
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Позвоните нам</div>
                     <div class="info-list__descriprion">+7 (495) 729-18-86</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Посетите офис</div>
                     <div class="info-list__descriprion">г. Москва, Волоколамское шоссе 15/22</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Напишите на почту</div>
                     <div class="info-list__descriprion">info@kalitahouse.ru</div>
@@ -751,9 +1148,9 @@
           </div>
 
           <div class="row row-2">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <div class="row">
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Поиск</div>
                   <form action="#" class="footer-form" role="form">
                     <input type="text" class="footer-form__search form-control">
@@ -761,7 +1158,7 @@
                 </div>
 
                 <!-- Subnav -->
-                <nav class="col-lg-3 col-lg-offset-1">
+                <nav class="col-sm-3 col-sm-offset-1">
                   <div class="footer-subtitle">Меню</div>
                   <ul class="footer-subnav-list">
                     <li class="subnav-item">
@@ -783,7 +1180,7 @@
                 </nav>
 
                 <!-- Socials -->
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Социальные сети</div>
                   <ul class="footer-social-list">
                     <li class="footer-social-item">
@@ -799,8 +1196,8 @@
           </div>
 
           <!-- Copyright -->
-          <div class="row row-3">
-            <div class="col-lg-8 col-centered">
+          <div class="row row-3 hidden-xs">
+            <div class="col-sm-8 col-centered">
               <h3 class="footer-title">Архитектурно-строительная компания "Калита"</h3>
               <div class="copyright-title">@ Copyright 2016.</div>
               <div class="copyright-text">

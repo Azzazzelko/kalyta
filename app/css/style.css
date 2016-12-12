@@ -68,7 +68,7 @@ body {
 ** header *
 ***********/
 
-.header .container-fluid {
+.header__top_bg {
 	background: #393834;
 }
 
@@ -125,7 +125,8 @@ body {
 }
 
 .nav-link {
-	display: block;
+	vertical-align: middle;
+	display: inline-block;
 	font-size: 1rem;
 	position: relative;
 }
@@ -217,7 +218,7 @@ body {
 
 .indicators-container {
 	position: absolute;
-	bottom: 15px;
+	bottom: 10px;
 	left: 0;
 	right: 0;
 }
@@ -258,18 +259,19 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	margin: 0;
 }
 
-.carousel-indicators li:first-child {
+#carousel .carousel-indicators li:first-child {
 	left: 0;
 }
 
-.carousel-indicators li:nth-child(2) {
+#carousel .carousel-indicators li:nth-child(2) {
 	transform: translate(-50%, -50%);
 	left: 50%;
 }
 
-.carousel-indicators li:last-child {
+#carousel .carousel-indicators li:last-child {
 	right: 0;
 }
 
@@ -277,7 +279,7 @@ body {
 	width: 12px !important;
 	height: 12px !important;
 	border: 1px solid #bfa48d;
-	margin: 1px;
+	margin: 0;
 	background: transparent;
 }
 
@@ -331,15 +333,14 @@ body {
 }
 
 .carousel-caption_shading {
-	background: url(../images/slider-shading.png) no-repeat;
-	background-size: contain;
+	background: url(../images/slider-shading.png) no-repeat 50% 50%;
+	background-size: cover;
 }
 
 .carousel-caption__title {
 	font-family: 'anglecia_pro_displayregular';
 	font-size: 3rem;
 	color: #bfa48d;
-	padding-top: 15px;
 }
 
 .carousel-caption__description {
@@ -355,8 +356,7 @@ body {
 }
 
 .carousel-caption_shading {
-	padding-bottom: 70px;
-	background: gradient
+	padding-bottom: 5%;
 }
 
 /************
@@ -395,8 +395,8 @@ body {
 	margin: 0;
 }
 
-.building-row-2 .col-lg-10.col-centered:before,
-.building-row-2 .col-lg-10.col-centered:after {
+.building-row-2 .col-sm-10.col-centered:before,
+.building-row-2 .col-sm-10.col-centered:after {
 	content: "";
 	position: absolute;
 	top: 87px;
@@ -406,11 +406,11 @@ body {
 	background: #bfa48d;
 }
 
-.building-row-2 .col-lg-10.col-centered:after {
+.building-row-2 .col-sm-10.col-centered:after {
 	right: -450px;
 }
 
-.building-row-2 .col-lg-10.col-centered:before {
+.building-row-2 .col-sm-10.col-centered:before {
 	left: -450px;
 }
 
@@ -469,11 +469,11 @@ body {
 }
 
 .popular__title:before {
-	left: -85px;
+	left: -100px;
 }
 
 .popular__title:after {
-	right: -85px;
+	right: -100px;
 }
 
 .popular__link {
@@ -567,7 +567,7 @@ body {
 .popular__description-title {
 	font-family: 'anglecia_pro_displaymedium';
 	font-size: 1.250rem;
-	padding: 0 35px 0 70px;
+	padding: 0 4% 0 19.45%;
 	margin-bottom: 20px;
 	position: relative;
 }
@@ -588,7 +588,7 @@ body {
 }
 
 .popular__description-item {
-	padding: 0 35px 0 70px;
+	padding: 0 4% 0 19.45%;
 	margin-bottom: 5px;
 	font-size: 1.063rem;
 	margin-bottom: 0;
@@ -652,6 +652,20 @@ body {
 .indicators-position {
 	position: absolute;
 	bottom: -40px;
+	width: 100%;
+}
+
+#carousel-2 .carousel-indicators li:first-child {
+	left: 0;
+}
+
+#carousel-2 .carousel-indicators li:nth-child(2) {
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+#carousel-2 .carousel-indicators li:last-child {
+	right: 0;
 }
 
 .carousel-2__link:hover .carousel-2__link-img_hover {
@@ -667,7 +681,6 @@ body {
 .carousel-2__link-img_hover {
 	opacity: 0;
 	transition: all 0.5s;
-
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -706,8 +719,8 @@ body {
 
 .carousel-2__link-img_hover-description__title {
 	font-family: 'anglecia_pro_displaymedium';
-	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-top: 11%;
+	margin-bottom: 7%;
 	font-size: 1.188rem;
 	position: relative;
 }
@@ -725,7 +738,7 @@ body {
 }
 
 .carousel-2__link-img_hover-description__list {
-	margin-bottom: 40px;
+	margin-bottom: 11%;
 }
 
 .carousel-2__link-img_hover-description__item {
@@ -735,7 +748,7 @@ body {
 .carousel-2__link-img_hover-text {
 	font-size: 0.750rem;
 	height: 45px;
-	line-height: 2.929rem;
+	line-height: 2.5rem;
 	display: inline-block;
 	width: 50%;
 	border-top: 2px solid #bfa48d;
@@ -755,7 +768,6 @@ body {
 	margin-top: 80px;
 	margin-bottom: 80px;
 	border: 1px solid #bfa48d;
-	min-height: 525px;
 	padding: 35px 0 40px 0;
 }
 
@@ -971,7 +983,7 @@ body {
 }
 
 .info-list-item_container {
-	padding: 15px 0px 10px 35px;
+	padding: 5.72% 0 3.81% 13.35%
 }
 
 .info-list-item:before {
@@ -1020,6 +1032,7 @@ body {
 	border: 1px solid #cdcdcd;
 	background: transparent;
 	color: #cdcdcd;
+	width: 66.6666666%;
 }
 
 .footer-subnav-list {
