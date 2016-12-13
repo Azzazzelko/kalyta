@@ -736,6 +736,7 @@
 	.call-pop__button-sumbit {
 		font-size: 1.083rem;
 		width: 100%;
+		letter-spacing: 0;
 	}
 
 	.call-pop__close-button {

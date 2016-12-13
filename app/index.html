@@ -7,7 +7,7 @@
   <title>Главная</title>
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media/main-media.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -298,7 +298,7 @@
               <h2 class="building__title">Строительство и проектирование загородных домов премиум класса</h2>
             </div>
             <div class="col-sm-2 col-centered">
-              <a href="#" class="button button-building">Получить консультацию</a>
+              <a href=".consultation-pop-up" class="button button-building" data-toggle="modal">Получить консультацию</a>
             </div>
           </div>
           <div class="row building-row-2 hidden-xs">
@@ -1094,6 +1094,23 @@
                   </div>
                 </form>
               </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Pop-Up -->
+        <div class="modal fade consultation-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="call-pop-up__dialog">
+            <div class="call-pop__container consultation-pop-up__container">
+              <a href="#" class="call-pop__close-button" data-dismiss="modal"></a>
+              <div class="call-pop__title">Заказать консультацию</div>
+              <div class="call-pop__description">Обратите внимание, все поля обязательны для заполнения</div>
+              <form action="#" class="call-pop__form">
+                <input type="text" class="call-pop__input c-p-form__name" placeholder="Имя" name="name">
+                <input type="text" class="call-pop__input c-p-form__tel" placeholder="Телефон" name="tel">
+                <input type="text" class="call-pop__input c-p-form__email" placeholder="Электронная почта" name="email">
+                <button type="submit" class="call-pop__button-sumbit">Получить консультацию</button>
+              </form>
             </div>
           </div>
         </div>

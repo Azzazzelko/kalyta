@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Карточка проекта</title>
   <link rel="stylesheet" href="../fonts/fonts.css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/project-cart.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css"">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/project-card.css">
+  <link rel="stylesheet" href="../css/media/main-media.css">
+  <link rel="stylesheet" href="../css/media/project_card-media.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,20 +20,20 @@
     </head>
     <body>
       <header class="header">
-        <div class="container-fluid">
+        <div class="header__top_bg hidden-xs">
           <div class="container">
             <div class="row header__top">
-              <div class="col-lg-3 pull-left">
+              <div class="col-sm-3 pull-left">
                 <a href="mailto:info@kalitahouse.ru" class="header__info">info@kalitahouse.ru</a>
               </div>
-              <div class="col-lg-4 pull-right text-right">
+              <div class="col-sm-5 pull-right text-right">
                 <a href=".call-pop-up" class="header__call" data-toggle="modal">Заказать звонок</a>
                 <div class="header__tel">+7(495)729-18-86</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container hidden-xs">
           <ul class="nav-list text-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Проекты</a>
@@ -61,7 +63,7 @@
             <li class="nav-item nav-item_logo">
               <a class="nav-link" href="#">
                 <h1 class="sr-only">Калита</h1>
-                <img class="logo" src="../images/logo.png" alt="logo">
+                <img class="logo img-responsive" src="../images/logo.png" alt="logo">
               </a>
             </li>
             <li class="nav-item">
@@ -104,6 +106,89 @@
             </li>
           </ul>
         </div>
+        <div class="container header__xs visible-xs">
+          <div class="header__xs-wrapper">
+            <a href="#mobile-nav" class="h-mobile__menu" data-toggle="collapse"></a>
+            <nav class="mobile-nav collapse container" id="mobile-nav">
+              <div class="mobile-nav-wrapper">
+                <div class="mobile-nav__tel">+7 (495) 729-18-86</div>
+                <a href="mailto:info@kalitahouse.ru" class="mobile-nav__email">info@kalitahouse.ru</a>
+                <a href="#mobile-nav" data-toggle="collapse" class="mobile-nav__button-close"></a>
+                <div class="mobile-nav__accordion" id="mobile-nav__accordion">
+                  <ul class="accordion-list" id="accordion-list">
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Проекты</a>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Построенные дома</a>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-1" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Услуги
+                      </a>
+                      <ul id="accordion-collapse-1" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Строительство</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Индивидуальное проектирование</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Погонаж бревна</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Коммерческое строительство</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-2" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Техноголии
+                      </a>
+                      <ul id="accordion-collapse-2" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ручная рубка</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Канадская технология Post&Beam</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Сборка клееного бруса</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-3" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        О компании
+                      </a>
+                      <ul id="accordion-collapse-3" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">О нас</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Партнеры</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Новости компании</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ответы на вопросы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <a href="#" class="h-mobile__logo-link">
+              <img src="../images/logo-xs.png" alt="logo" class="h-mobile__logo-img img-responsive">
+            </a>
+            <a href=".call-pop-up" data-toggle="modal" class="h-mobile__call"></a>
+          </div> 
+        </div>
       </header>
 
       <main class="main">
@@ -112,7 +197,7 @@
         <div class="page-head">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-centered">
+              <div class="col-sm-8 col-centered">
                 <ul class="breadcrumbs-list">
                   <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="#">Главная</a>
@@ -130,10 +215,10 @@
         <!-- Card -->
         <div class="container card">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <h2 class="page-title">Проект дома из клееного бруса «Шале-4»</h2>
             </div>
-            <div class="col-lg-8">
+            <div class="col-sm-8">
               <div class="slider-card">
                 <div class="carousel-bounding-box" id="carousel-bounding-box">
                   <div class="carousel slide" id="carousel-card">
@@ -153,12 +238,25 @@
                       </div>
                     </div>
 
-                    <a class="left carousel-control" href="#carousel-card" role="button" data-slide="prev">
+                    <a class="left carousel-control hidden-xs" href="#carousel-card" role="button" data-slide="prev">
                       <span class="slider-card__c-left"></span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-card" role="button" data-slide="next">
+                    <a class="right carousel-control hidden-xs" href="#carousel-card" role="button" data-slide="next">
                       <span class="slider-card__c-right"></span>
                     </a>
+
+                    <div class="container indicators-container visible-xs">
+                      <div class="row carousel-row-control">
+                        <div class="col-centered">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-card" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-card" data-slide-to="1"></li>
+                            <li data-target="#carousel-card" data-slide-to="2"></li>
+                            <li data-target="#carousel-card" data-slide-to="3"></li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
                 </div>
@@ -166,22 +264,22 @@
 
               <div class="slider-thumbs" id="slider-thumbs">
                 <ul class="slider-thumbs__list row">
-                  <li class="slider-thumbs__item col-lg-3">
+                  <li class="slider-thumbs__item col-sm-3 col-xs-3">
                     <a href="#carousel-card" data-slide-to="0" class="slider-thumbs__link">
                       <img class="img-responsive" src="../images/house-sm.jpg">
                     </a>
                   </li>
-                  <li class="slider-thumbs__item col-lg-3">
+                  <li class="slider-thumbs__item col-sm-3 col-xs-3">
                     <a href="#carousel-card" data-slide-to="1" class="slider-thumbs__link">
                       <img class="img-responsive" src="../images/house-sm.jpg">
                     </a>
                   </li>
-                  <li class="slider-thumbs__item col-lg-3">
+                  <li class="slider-thumbs__item col-sm-3 col-xs-3">
                     <a href="#carousel-card" data-slide-to="2" class="slider-thumbs__link">
                       <img class="img-responsive" src="../images/house-sm.jpg">
                     </a>
                   </li>
-                  <li class="slider-thumbs__item col-lg-3">
+                  <li class="slider-thumbs__item col-sm-3 col-xs-3">
                     <a href="#carousel-card" data-slide-to="3" class="slider-thumbs__link">
                       <img class="img-responsive" src="../images/house-sm.jpg">
                     </a>
@@ -189,7 +287,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
               <div class="slider-card-info">
                 <div class="card-info-row-1">
                   <div class="card-info__subtitle">Площадь</div>
@@ -208,7 +306,7 @@
                 <div class="card-info-row-3">
                   <div class="card-info__ammount">7 750 000 руб.</div>
                 </div>
-                <div class="card-info-row-4">
+                <div class="card-info-row-4 hidden-xs">
                   <a href="#" class="card-info-download">Скачать карточку проекта</a>
                 </div>
                 <div class="card-info-row-5">
@@ -232,29 +330,29 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <ul class="card-icons-list row">
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-1">Терраса</div>
                 </li>
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-2">Второй свет</div>
                 </li>
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-3">Гараж/Навес</div>
                 </li>
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-4">Сауна/Баня</div>
                 </li>
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-5">Кабинет</div>
                 </li>
-                <li class="card-icons-item col-lg-2">
+                <li class="card-icons-item col-sm-2 col-xs-4">
                   <div class="card-icons-item__icon icon-6">Бассейн</div>
                 </li>
               </ul>
             </div>
-            <div class="col-lg-12">
+            <div class="col-sm-12 hidden-xs">
               <div class="card-description">
                 <p>
                   Компактный одноэтажный проект с интересной многоуровневой кровлей. Идеально подойдет для небольшой семьи или в качестве летнего дома. При необходимости планировку можно адаптировать под потребности будущих владельцев.
@@ -270,10 +368,10 @@
         <!-- price -->
         <div class="container price">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <div class="page-title price-title">Цены и комплектации</div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <ul class="nav nav-tabs price-tab-list">
                 <li class="price-tab-item active">
                   <a href="#wall" class="price-tab-link" data-toggle="tab">Cтеновой комплект</a>
@@ -287,7 +385,8 @@
               </ul>
               <div class="tab-content">
                 <div class="tab-pane fade in row active" id="wall">
-                  <ul class="tab-wall__list col-lg-12">
+                  <div class="tab-content__price col-sm-4">7 750 000 руб.</div>
+                  <ul class="tab-wall__list col-sm-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Фундамент:</div>
                       <div class="tab-wall__item-description">Свайно-ростверковый.</div>
@@ -313,10 +412,10 @@
                       <div class="tab-wall__item-description">Накладные и транспортные расходы.</div>
                     </li>
                   </ul>
-                  <div class="tab-content__price col-lg-4">7 750 000 руб.</div>
                 </div>
                 <div class="tab-pane fade row" id="warm">
-                  <ul class="tab-wall__list col-lg-12">
+                  <div class="tab-content__price col-sm-4">7 750 000 руб.</div>
+                  <ul class="tab-wall__list col-sm-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Фундамент:</div>
                       <div class="tab-wall__item-description">Свайно-ростверковый.</div>
@@ -342,10 +441,10 @@
                       <div class="tab-wall__item-description">Оконные системы Rehau с текстурной ламинацией под дерево.</div>
                     </li>
                   </ul>
-                  <div class="tab-content__price col-lg-4">7 750 000 руб.</div>
                 </div>
                 <div class="tab-pane fade row" id="premiun">
-                  <ul class="tab-wall__list col-lg-12">
+                  <div class="tab-content__price col-sm-4">7 750 000 руб.</div>
+                  <ul class="tab-wall__list col-sm-12">
                     <li class="tab-wall__item">
                       <div class="tab-wall__item-title">Стены:</div>
                       <div class="tab-wall__item-description">Клееный брус профилированный (ель сортовая).</div>
@@ -371,7 +470,6 @@
                       <div class="tab-wall__item-description">Накладные и транспортные расходы.</div>
                     </li>
                   </ul>
-                  <div class="tab-content__price col-lg-4">7 750 000 руб.</div>
                 </div>
               </div>
             </div>
@@ -420,21 +518,21 @@
       <footer class="footer">
         <div class="container">
           <div class="row row-1">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <ul class="footer-info-list row">
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Позвоните нам</div>
                     <div class="info-list__descriprion">+7 (495) 729-18-86</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Посетите офис</div>
                     <div class="info-list__descriprion">г. Москва, Волоколамское шоссе 15/22</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Напишите на почту</div>
                     <div class="info-list__descriprion">info@kalitahouse.ru</div>
@@ -445,9 +543,9 @@
           </div>
 
           <div class="row row-2">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <div class="row">
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Поиск</div>
                   <form action="#" class="footer-form" role="form">
                     <input type="text" class="footer-form__search form-control">
@@ -455,7 +553,7 @@
                 </div>
 
                 <!-- Subnav -->
-                <nav class="col-lg-3 col-lg-offset-1">
+                <nav class="col-sm-3 col-sm-offset-1">
                   <div class="footer-subtitle">Меню</div>
                   <ul class="footer-subnav-list">
                     <li class="subnav-item">
@@ -477,7 +575,7 @@
                 </nav>
 
                 <!-- Socials -->
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Социальные сети</div>
                   <ul class="footer-social-list">
                     <li class="footer-social-item">
@@ -493,8 +591,8 @@
           </div>
 
           <!-- Copyright -->
-          <div class="row row-3">
-            <div class="col-lg-8 col-centered">
+          <div class="row row-3 hidden-xs">
+            <div class="col-sm-8 col-centered">
               <h3 class="footer-title">Архитектурно-строительная компания "Калита"</h3>
               <div class="copyright-title">@ Copyright 2016.</div>
               <div class="copyright-text">
