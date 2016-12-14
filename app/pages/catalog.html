@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="../fonts/fonts.css">
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/catalog.css">
+  <link rel="stylesheet" href="../css/media/main-media.css">
+  <link rel="stylesheet" href="../css/media/catalog-media.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,20 +20,20 @@
     </head>
     <body>
       <header class="header">
-        <div class="container-fluid">
+        <div class="header__top_bg hidden-xs">
           <div class="container">
             <div class="row header__top">
-              <div class="col-lg-3 pull-left">
+              <div class="col-sm-3 pull-left">
                 <a href="mailto:info@kalitahouse.ru" class="header__info">info@kalitahouse.ru</a>
               </div>
-              <div class="col-lg-4 pull-right text-right">
+              <div class="col-sm-5 pull-right text-right">
                 <a href=".call-pop-up" class="header__call" data-toggle="modal">Заказать звонок</a>
                 <div class="header__tel">+7(495)729-18-86</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container hidden-xs">
           <ul class="nav-list text-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Проекты</a>
@@ -61,7 +63,7 @@
             <li class="nav-item nav-item_logo">
               <a class="nav-link" href="#">
                 <h1 class="sr-only">Калита</h1>
-                <img class="logo" src="../images/logo.png" alt="logo">
+                <img class="logo img-responsive" src="../images/logo.png" alt="logo">
               </a>
             </li>
             <li class="nav-item">
@@ -104,6 +106,89 @@
             </li>
           </ul>
         </div>
+        <div class="container header__xs visible-xs">
+          <div class="header__xs-wrapper">
+            <a href="#mobile-nav" class="h-mobile__menu" data-toggle="collapse"></a>
+            <nav class="mobile-nav collapse container" id="mobile-nav">
+              <div class="mobile-nav-wrapper">
+                <div class="mobile-nav__tel">+7 (495) 729-18-86</div>
+                <a href="mailto:info@kalitahouse.ru" class="mobile-nav__email">info@kalitahouse.ru</a>
+                <a href="#mobile-nav" data-toggle="collapse" class="mobile-nav__button-close"></a>
+                <div class="mobile-nav__accordion" id="mobile-nav__accordion">
+                  <ul class="accordion-list" id="accordion-list">
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Проекты</a>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Построенные дома</a>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-1" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Услуги
+                      </a>
+                      <ul id="accordion-collapse-1" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Строительство</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Индивидуальное проектирование</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Погонаж бревна</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Коммерческое строительство</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-2" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        Техноголии
+                      </a>
+                      <ul id="accordion-collapse-2" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ручная рубка</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Канадская технология Post&Beam</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Сборка клееного бруса</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item panel">
+                      <a href="#accordion-collapse-3" class="accordion-link accordion-link_caret" data-toggle="collapse" data-parent="#accordion-list">
+                        О компании
+                      </a>
+                      <ul id="accordion-collapse-3" class="collapse accordion-body-list">
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">О нас</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Партнеры</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Новости компании</a>
+                        </li>
+                        <li class="accordion-body-item">
+                          <a href="#" class="accordion-body-link">Ответы на вопросы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <a href="#" class="h-mobile__logo-link">
+              <img src="../images/logo-xs.png" alt="logo" class="h-mobile__logo-img img-responsive">
+            </a>
+            <a href=".call-pop-up" data-toggle="modal" class="h-mobile__call"></a>
+          </div> 
+        </div>
       </header>
 
       <main class="main">
@@ -112,9 +197,9 @@
         <div class="page-head">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-centered">
+              <div class="col-sm-8 col-centered">
                 <h2 class="page-head__title">Проекты домов и коттеджей</h2>
-                <div class="page-head__description">Компания Калита занимается проектированем индивидуальных домов. Здесь можно написать вводный текст.</div>
+                <div class="page-head__description hidden-xs">Компания Калита занимается проектированем индивидуальных домов. Здесь можно написать вводный текст.</div>
                 <ul class="breadcrumbs-list">
                   <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="#">Главная</a>
@@ -128,88 +213,91 @@
 
         <!-- Filters -->
         <div class="container">
-          <div class="filters">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="row">
-                  <a href="#" class="col-lg-4 col-centered filters-left__title">Все проекты</a>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 col-lg-offset-2">
-                    <div class="filters-left__list-title">Материал</div>
-                    <ul class="filters-left__list">
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Рубленый кедр</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Клееный брус</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Комбинированные</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Каменные</a>
-                      </li>
-                    </ul>
+          <a href="#filters" class="filter-button" data-toggle="collapse"></a>
+          <div id="filters" class="collapse">
+            <div class="filters">
+              <div class="row">
+                <div class="col-sm-6 border_xs">
+                  <div class="row">
+                    <a href="#" class="col-sm-4 col-centered filters-left__title">Все проекты</a>
                   </div>
-                  <div class="col-lg-4 col-lg-offset-2">
-                    <div class="filters-left__list-title">Стиль</div>
-                    <ul class="filters-left__list">
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Канадский</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Русский</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Современный</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Шале</a>
-                      </li>
-                      <li class="filters-left__item">
-                        <a href="#" class="filters-left__link">Премиум</a>
-                      </li>
-                    </ul>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-2">
+                      <div class="filters-left__list-title">Материал</div>
+                      <ul class="filters-left__list">
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Рубленый кедр</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Клееный брус</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Комбинированные</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Каменные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-2">
+                      <div class="filters-left__list-title">Стиль</div>
+                      <ul class="filters-left__list">
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Канадский</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Русский</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Современный</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Шале</a>
+                        </li>
+                        <li class="filters-left__item">
+                          <a href="#" class="filters-left__link">Премиум</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-4 col-centered filters-rights__title">Фильтр</div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 text-center">
-                    <div class="filters-right__list-title">Количество этажей</div>
-                    <ul class="filters-right__list">
-                      <li class="filters-right__item">
-                        <label class="filters-right__label filters-right__label-checkbox">
-                          <input type="checkbox" name="floors" class="filters-right__input-checkbox" checked>
-                          <div class="filters-right__label-text filters-right__label-text-checkbox">1</div>
-                        </label>
-                      </li>
-                      <li class="filters-right__item">
-                        <label class="filters-right__label filters-right__label-checkbox">
-                          <input type="checkbox" name="floors" class="filters-right__input-checkbox">
-                          <div class="filters-right__label-text filters-right__label-text-checkbox">2</div>
-                        </label>
-                      </li>
-                      <li class="filters-right__item">
-                        <label class="filters-right__label filters-right__label-checkbox">
-                          <input type="checkbox" name="floors" class="filters-right__input-checkbox">
-                          <div class="filters-right__label-text filters-right__label-text-checkbox">3</div>
-                        </label>
-                      </li>
-                    </ul>
-                    <label class="filters-right__label filters-right__label-radio">
-                      <input type="checkbox" name="ground-floor" class="filters-right__input-radio">
-                      <div class="filters-right__label-text filters-right__label-text-radio">Цокольный этаж</div>
-                    </label>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-4 col-centered filters-rights__title hidden-xs">Фильтр</div>
                   </div>
-                  <div class="col-lg-4 text-center slider-container_padding">
-                    <div class="filters-right__list-title filters-right__list-title_margin-b">Площадь объекта</div>
-                    <div id="slider-range" class="slider-range" data-min="150" data-max="3000"></div>
-                    <div id="slider-amount" class="slider-amount"></div>
+                  <div class="row">
+                    <div class="col-sm-6 text-center border_xs">
+                      <div class="filters-right__list-title">Количество этажей</div>
+                      <ul class="filters-right__list">
+                        <li class="filters-right__item">
+                          <label class="filters-right__label filters-right__label-checkbox">
+                            <input type="checkbox" name="floors" class="filters-right__input-checkbox" checked>
+                            <div class="filters-right__label-text filters-right__label-text-checkbox">1</div>
+                          </label>
+                        </li>
+                        <li class="filters-right__item">
+                          <label class="filters-right__label filters-right__label-checkbox">
+                            <input type="checkbox" name="floors" class="filters-right__input-checkbox">
+                            <div class="filters-right__label-text filters-right__label-text-checkbox">2</div>
+                          </label>
+                        </li>
+                        <li class="filters-right__item">
+                          <label class="filters-right__label filters-right__label-checkbox">
+                            <input type="checkbox" name="floors" class="filters-right__input-checkbox">
+                            <div class="filters-right__label-text filters-right__label-text-checkbox">3</div>
+                          </label>
+                        </li>
+                      </ul>
+                      <label class="filters-right__label filters-right__label-radio">
+                        <input type="checkbox" name="ground-floor" class="filters-right__input-radio">
+                        <div class="filters-right__label-text filters-right__label-text-radio">Цокольный этаж</div>
+                      </label>
+                    </div>
+                    <div class="col-sm-4 text-center slider-container_padding">
+                      <div class="filters-right__list-title filters-right__list-title_margin-b">Площадь объекта</div>
+                      <div id="slider-range" class="slider-range" data-min="150" data-max="3000"></div>
+                      <div id="slider-amount" class="slider-amount"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -220,228 +308,183 @@
         <!-- Cards -->
         <div class="container cards">
           <ul class="row popular-list">
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
                   <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-2.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-3.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
                   <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-2.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-3.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
                   <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-2.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-3.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
                   <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-2.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
-              <a href="#" class="popular__link">
-                <div class="popular__image-container">
-                  <img src="../images/project-3.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
-                    <div class="popular__image_hover-text">Подробнее</div>
-                  </div>
-                </div>
-                <div class="popular__description-title">Шале-4</div>
-                <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
-                </ul>
-              </a>
-            </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
                   <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
-                  <img src="../images/project-2.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
-            <li class="col-lg-4">
+            <li class="col-sm-4">
               <a href="#" class="popular__link">
                 <div class="popular__image-container">
-                  <img src="../images/project-3.png" alt="img" class="popular__image img-responsive">
-                  <div class="popular__image_hover">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
                     <div class="popular__image_hover-text">Подробнее</div>
                   </div>
                 </div>
                 <div class="popular__description-title">Шале-4</div>
                 <ul class="popular__description-list">
-                  <li class="popular__description-item">Площадь: 250 м²</li>
-                  <li class="popular__description-item">Стоимость: от 7 750 000 руб.</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="col-sm-4">
+              <a href="#" class="popular__link">
+                <div class="popular__image-container">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
+                    <div class="popular__image_hover-text">Подробнее</div>
+                  </div>
+                </div>
+                <div class="popular__description-title">Шале-4</div>
+                <ul class="popular__description-list">
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="col-sm-4">
+              <a href="#" class="popular__link">
+                <div class="popular__image-container">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
+                    <div class="popular__image_hover-text">Подробнее</div>
+                  </div>
+                </div>
+                <div class="popular__description-title">Шале-4</div>
+                <ul class="popular__description-list">
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="col-sm-4">
+              <a href="#" class="popular__link">
+                <div class="popular__image-container">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
+                    <div class="popular__image_hover-text">Подробнее</div>
+                  </div>
+                </div>
+                <div class="popular__description-title">Шале-4</div>
+                <ul class="popular__description-list">
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="col-sm-4">
+              <a href="#" class="popular__link">
+                <div class="popular__image-container">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
+                    <div class="popular__image_hover-text">Подробнее</div>
+                  </div>
+                </div>
+                <div class="popular__description-title">Шале-4</div>
+                <ul class="popular__description-list">
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="col-sm-4">
+              <a href="#" class="popular__link">
+                <div class="popular__image-container">
+                  <img src="../images/project-1.png" alt="img" class="popular__image img-responsive">
+                  <div class="popular__image_hover hidden-xs">
+                    <div class="popular__image_hover-text">Подробнее</div>
+                  </div>
+                </div>
+                <div class="popular__description-title">Шале-4</div>
+                <ul class="popular__description-list">
+                  <li class="popular__description-item"><span class="hidden-xs">Площадь:</span> 250 м²</li>
+                  <li class="popular__description-item"><span class="hidden-xs">Стоимость:</span> от 7 750 000 руб.</li>
                 </ul>
               </a>
             </li>
@@ -449,9 +492,9 @@
         </div>
         
         <!-- Pagination -->
-        <div class="container">
+        <div class="container paginationn">
           <div class="row">
-            <ul class="page-pagination-list col-lg-2 col-centered">
+            <ul class="page-pagination-list col-sm-4 col-lg-2 col-centered border_xs">
               <li class="page-pagination-item">
                 <a href="#" class="page-pagination-link"></a>
               </li>
@@ -474,7 +517,7 @@
         <!-- Page bottom -->
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <h2 class="page-bottom__title">Проекты загородных домов и коттеджей</h2>
               <div class="page-bottom__description">
                 Клееный брус: практичное решение для изготовления клееного бруса используют древесину хвойных пород. Древесину обрабатывают с целью достижения гладкости и конкретных размеров брусьев, чтобы в дальнейшем было проще монтировать дома, кроме того, уже готовое строение нуждается в минимуме отделки. Таким образом, использование данного материала позволяет в значительной мере экономить время на возведение коттеджа или другого здания, а также финансы, которые затрачиваются при любом другом виде строительства на отделочные работы.
@@ -508,21 +551,21 @@
       <footer class="footer">
         <div class="container">
           <div class="row row-1">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <ul class="footer-info-list row">
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Позвоните нам</div>
                     <div class="info-list__descriprion">+7 (495) 729-18-86</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Посетите офис</div>
                     <div class="info-list__descriprion">г. Москва, Волоколамское шоссе 15/22</div>
                   </div>
                 </li>
-                <li class="info-list-item col-lg-3 col-lg-offset-1">
+                <li class="info-list-item col-sm-3 col-xs-12 col-sm-offset-1">
                   <div class="info-list-item_container">
                     <div class="info-list__title">Напишите на почту</div>
                     <div class="info-list__descriprion">info@kalitahouse.ru</div>
@@ -533,9 +576,9 @@
           </div>
 
           <div class="row row-2">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
               <div class="row">
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Поиск</div>
                   <form action="#" class="footer-form" role="form">
                     <input type="text" class="footer-form__search form-control">
@@ -543,7 +586,7 @@
                 </div>
 
                 <!-- Subnav -->
-                <nav class="col-lg-3 col-lg-offset-1">
+                <nav class="col-sm-3 col-sm-offset-1">
                   <div class="footer-subtitle">Меню</div>
                   <ul class="footer-subnav-list">
                     <li class="subnav-item">
@@ -565,7 +608,7 @@
                 </nav>
 
                 <!-- Socials -->
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-sm-3 col-sm-offset-1 hidden-xs">
                   <div class="footer-subtitle">Социальные сети</div>
                   <ul class="footer-social-list">
                     <li class="footer-social-item">
@@ -581,8 +624,8 @@
           </div>
 
           <!-- Copyright -->
-          <div class="row row-3">
-            <div class="col-lg-8 col-centered">
+          <div class="row row-3 hidden-xs">
+            <div class="col-sm-8 col-centered">
               <h3 class="footer-title">Архитектурно-строительная компания "Калита"</h3>
               <div class="copyright-title">@ Copyright 2016.</div>
               <div class="copyright-text">

@@ -43,17 +43,3 @@ $(function() {
   };
 
 }());
-
-
-
-
-
-
-
-// $(function() {
-
-//   $('.carousel').carousel({
-//     interval: 0
-//   })
-
-// }());

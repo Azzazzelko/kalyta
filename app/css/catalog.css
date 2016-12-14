@@ -22,7 +22,7 @@
 }
 
 .page-head__title {
-	font-size: 40px;
+	font-size: 2.500rem;
 	color: #bfa48d;
 	margin-top: 125px;
 	text-transform: uppercase;
@@ -31,7 +31,7 @@
 }
 
 .page-head__description {
-	font-size: 15px;
+	font-size: 0.938rem;
 	color: #cdcdcd;
 	margin-bottom: 75px;
 }
@@ -42,14 +42,14 @@
 	margin-right: 30px;
 	position: relative;
 	color: #bfa48d;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .breadcrumbs-item:after {
 	position: absolute;
 	content: "/";
 	display: block;
-	font-size: 20px;
+	font-size: 1.250rem;
 	font-weight: bold;
 	right: -20px;
 	top: 50%;
@@ -95,7 +95,7 @@
 .filters-left__title:focus {
 	display: block;
 	padding-left: 30px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #bfa48d;
 	font-family: 'open_sansbold';
 	margin-bottom: 30px;
@@ -127,7 +127,7 @@
 .filters-left__list-title {
 	font-family: 'open_sansbold';
 	color: #bfa48d;
-	font-size: 14px;
+	font-size: 0.875rem;
 	margin-left: -30px;
 	margin-bottom: 5px;
 }
@@ -165,7 +165,7 @@
 
 .filters-rights__title {
 	color: #2a2a2a;
-	font-size: 14px;
+	font-size: 0.875rem;
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -184,7 +184,7 @@
 .filters-right__list-title {
 	font-family: 'open_sansbold';
 	color: #bfa48d;
-	font-size: 14px;
+	font-size: 0.875rem;
 	margin-bottom: 25px;
 }
 
@@ -234,7 +234,7 @@
 	height: 30px;
 	border: 1px solid #707070;
 	color: #707070;
-	line-height: 30px;
+	line-height: 1.875rem;
 	text-align: center;
 }
 
@@ -265,7 +265,7 @@
 	height: 25px;
 	border: 1px solid #bfa48d;
 	color: #2a2a2a;
-	font-size: 12px;
+	font-size: 0.750rem;
 	padding: 3px 10px;
 	text-align: center;
 }
@@ -302,6 +302,19 @@
 	cursor: pointer;
 }
 
+.ui-slider-handle:last-child:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #707070;
+	left: -5px;
+}
+
+.ui-slider-handle:last-child {
+	background: none;
+}
 /**************
 ***** cards ***
 **************/
@@ -334,9 +347,9 @@
 .page-pagination-item {
 	text-align: center;
 	vertical-align: middle;
-	font-size: 17px;
+	font-size: 1.063rem;
 	color: #bfa48d;
-	line-height: 22px;
+	line-height: 1.375rem;
 	height: 24px;
 	width: 20px;
 	display: inline-block;
@@ -345,7 +358,7 @@
 }
 
 .page-pagination-item:hover,
-.page-pagination-item .active {
+.page-pagination-item.active {
 	border-top: 1px solid #bfa48d;
 	border-bottom: 1px solid #bfa48d;
 }
@@ -374,14 +387,14 @@
 ***************/
 
 .page-bottom__title {
-	font-size: 25px;
+	font-size: 1.563rem;
 	color: #2a2a2a;
 	font-family: 'anglecia_pro_displayregular';
 	margin-bottom: 20px;
 }
 
 .page-bottom__description {
-	font-size: 15px;
+	font-size: 0.938rem;
 	color: #2a2a2a;
 	margin-bottom: 80px;
 }
