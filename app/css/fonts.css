@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-italic-webfont.woff') format('woff'),
+         url('../fonts/opensans-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anglecia_pro_displaymedium';
+    src: url('../fonts/angleciaprodisplaymedium-webfont.woff2') format('woff2'),
+         url('../fonts/angleciaprodisplaymedium-webfont.woff') format('woff'),
+		 url('../fonts/angleciaprodisplaymedium-webfont.otf') format('opentype'),
+         url('../fonts/angleciaprodisplaymedium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anglecia_pro_displayregular';
+    src: url('../fonts/angleciaprodisplayregular-webfont.woff2') format('woff2'),
+         url('../fonts/angleciaprodisplayregular-webfont.woff') format('woff'),
+         url('../fonts/angleciaprodisplayregular-webfont.otf') format('opentype'),
+         url('../fonts/angleciaprodisplayregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
