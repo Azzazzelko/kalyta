@@ -152,7 +152,7 @@
 	}
 
 	.card-icons-item__icon:before {
-		transform: scale(0.85) left(-50%);
+		transform: scale(0.85) translateX(-60%)
 	}
 
 	.card-icons-item__icon {
@@ -282,7 +282,7 @@
 	}
 
 	.card-info__ammount {
-		font-size: 1.857rem;
+		font-size: 1.83rem;
 		line-height: 1.857rem;
 	}
 	

@@ -297,7 +297,6 @@
 	width: 5px;
 	height: 10px;
 	cursor: default;
-	touch-action: none;
 	background: #707070;
 	cursor: pointer;
 }

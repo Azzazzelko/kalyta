@@ -81,7 +81,8 @@
 	background: url(../images/icons/sprite-slides.png) no-repeat;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 18px;
 	height: 40px;
 	background-position: -133px -1013px;
@@ -98,6 +99,7 @@
 .slider-thumbs__link {
 	display: block;
 	cursor: pointer;
+	max-width: 100%;
 }
 
 .slider-thumbs {

@@ -35,6 +35,10 @@ body {
 	font-family: 'open_sansregular';
 }
 
+.img-responsive {
+	max-width: inherit;
+}
+
 .main {
 	height: auto;
 	overflow: hidden;
@@ -129,6 +133,7 @@ body {
 	display: inline-block;
 	font-size: 1rem;
 	position: relative;
+	max-width: 100%;
 }
 
 .nav-item:hover:before {
@@ -170,7 +175,7 @@ body {
 	position: absolute;
 	width: 235px;
 	background: #fff;
-	z-index: 1;
+	z-index: 10;
 	transition: all 0.3s;
 	padding: 25px 10px 10px 25px;
 }
@@ -221,6 +226,7 @@ body {
 	bottom: 10px;
 	left: 0;
 	right: 0;
+	z-index: 10;
 }
 
 .carousel-indicators {
@@ -481,6 +487,7 @@ body {
 	min-height: 365px;
 	margin-bottom: 25px;
 	display: inline-block;
+	max-width: 100%;
 }
 
 .popular__link:after {
@@ -499,6 +506,7 @@ body {
 	margin-bottom: 25px;
 	position: relative;
 	overflow: hidden;
+	max-width: 100%;
 }
 
 .popular__image-container:before {
@@ -676,6 +684,7 @@ body {
 	position: relative;
 	color: #bfa48d;
 	overflow: hidden;
+	max-width: 100%;
 }
 
 .carousel-2__link-img_hover {
