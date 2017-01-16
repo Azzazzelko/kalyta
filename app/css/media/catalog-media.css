@@ -48,6 +48,10 @@
 		color: #c6aa92;
 	}
 
+	.filter-button:before {
+		content: "Скрыть фильтры";
+	}
+
 	.filter-button[aria-expanded=true]:before {
 		content: "Скрыть фильтры";
 	}
